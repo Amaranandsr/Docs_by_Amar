@@ -22,11 +22,12 @@
 ### JSON
 **mongoimport**
 
-	 `mongoimport --uri="mongodb+srv://<your username>:<your password>@<your clusterURI>.mongodb.net/sample_supplies" --drop sales.json`
+	 mongoimport --uri="mongodb+srv://<your username>:<your password>@<your clusterURI>.mongodb.net/sample_supplies" --drop sales.json
 	
-#### BSON
+### BSON
 **mongorestore**
-> `mongorestore --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"  --drop dump`
+
+	mongorestore --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"  --drop dump
 	
 <br>
 
@@ -34,13 +35,16 @@
 
 #### JSON
 **mongoexport**
-> `mongoexport --uri="mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies" --collection=sales --out=sales.json`
+
+	mongoexport --uri="mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies" --collection=sales --out=sales.json
 	
 #### BSON
  **mongodump**
-> `mongodump --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"`
+
+	mongodump --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"`
 	
 <br>
+
 ## Data Explorer
  Namespace - The concatenation of the database name and collection name is called a namespace.
 
@@ -51,7 +55,8 @@
 
 ## Find Commmand
 **Connect to the Atlas cluster:**
-> `mongo "mongodb+srv://<username>:<password>@<clusterURI>.mongodb.net/admin"`
+
+	mongo "mongodb+srv://<username>:<password>@<clusterURI>.mongodb.net/admin"
 
 - show dbs
 	> show database lists
