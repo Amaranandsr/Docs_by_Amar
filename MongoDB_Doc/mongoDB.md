@@ -52,6 +52,7 @@
 - {"state": "NY"}
 - {"state": "NY", "city": "ALBANY"}
 
+<br>
 
 ## Find Commmand
 **Connect to the Atlas cluster:**
