@@ -2,28 +2,34 @@
 >MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License.
 
 
-	> Username
-	- m001-student
+- Username
 
-	> Password
-	- m001-mongodb-basics
+		 m001-student
 
-	> clusterURI
-	- sandbox
+- Password
+
+		m001-mongodb-basics
+
+- clusterURI
+
+		sandbox
 
 
 <br>
+
 ## Import:
 
-#### JSON
+### JSON
 **mongoimport**
-> `mongoimport --uri="mongodb+srv://<your username>:<your password>@<your clusterURI>.mongodb.net/sample_supplies" --drop sales.json`
+
+	 `mongoimport --uri="mongodb+srv://<your username>:<your password>@<your clusterURI>.mongodb.net/sample_supplies" --drop sales.json`
 	
 #### BSON
 **mongorestore**
 > `mongorestore --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"  --drop dump`
 	
 <br>
+
 ## Export:
 
 #### JSON
@@ -42,7 +48,7 @@
 - {"state": "NY"}
 - {"state": "NY", "city": "ALBANY"}
 
-<br>
+
 ## Find Commmand
 **Connect to the Atlas cluster:**
 > `mongo "mongodb+srv://<username>:<password>@<clusterURI>.mongodb.net/admin"`
