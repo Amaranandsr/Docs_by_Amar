@@ -59,7 +59,7 @@ Namespace - The concatenation of the database name and collection name is called
 
 <br>
 
-## ObjectId()
+### ObjectId()
 
 - "\_id" unique identifier for a document in a collection.
 
@@ -69,6 +69,7 @@ Namespace - The concatenation of the database name and collection name is called
 
   > _ObjectId()_ is the default value for the "\_id" field unless otherwise specified.
 
+<br>
 ## Find Commmand
 
 **Connect to the Atlas cluster:**
@@ -133,6 +134,8 @@ Namespace - The concatenation of the database name and collection name is called
 
   > `drop()` delete the given collection
 
+<br>
+
 ## Operators
 
 ### Fields
@@ -168,3 +171,37 @@ Namespace - The concatenation of the database name and collection name is called
 ### Bitwise
 
 - `$bit` - Performs bitwise AND, OR, and XOR updates of integer values.
+
+<br>
+
+## Query Operators:
+
+### Comparison Operators
+
+> **Syntex :**
+> { "`<field>`": { "`<Comparison Operator>`" : `<Value>` }}
+> or
+> find({ "`<field>`": { "`<Comparison Operator>`" : `<Value>` }})
+
+- `$eq` - Equal to
+- `$ne` - Note Equal to
+- `$gt` - Greater Than
+- `$lt` - Less Than
+- `$gte` - Greater Than or Equal to
+- `$lte` - Less Than or Equal to
+
+### logic Operators
+
+> **Syntex :**
+> { "`<logic Operators>`" : `[{"field1": "value1"}, {"field2": "value2"}]` }
+> in logic syntax array is used.
+
+- `$and` - **Match all** specified query clauses.
+- `$or` - **At least one** of the query clauses.
+- `$nor` - **Fail to match** both query clauses.
+
+> **Syntex :**
+> { "`<logic Operators>`" : `[{"field1": "value1"}]` }
+> in not logic syntax array is not necessary.
+
+- `$not` - **Negates** the query requirement
